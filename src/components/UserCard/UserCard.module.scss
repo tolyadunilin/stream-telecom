@@ -1,0 +1,34 @@
+.card {
+  background: var(--color-bg);
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px var(--color-card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px var(--color-card-shadow-hover);
+  }
+}
+
+.name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.email {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.phone {
+  margin: 0;
+  font-size: 14px;
+  color: var(--color-text-muted);
+}
